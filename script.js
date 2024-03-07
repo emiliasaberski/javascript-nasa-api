@@ -1,4 +1,4 @@
-import apiKey from "./.gitignore/api-key.js"; //För att dölja min API-key om man jobbar mot github
+import apiKey from "./api-key.js"; //För att dölja min API-key om man jobbar mot github
 
 const roverApi = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2024-1-21&api_key=${apiKey}`;
 
