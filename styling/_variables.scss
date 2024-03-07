@@ -1,0 +1,21 @@
+//Variables för färgerna som är olika beroende på om det är dark-mode eller inte
+
+body {
+    --background-color: #FCFAFF;
+    --foreground-color: #DFD6F2;
+    --primary-text-color: #212121;
+    --secondary-text-color: #898989;
+    --toggle-bg: #BCA0E6;
+    --toggle-fg: #FFFFFF;
+    transition: 0.3s;
+  }
+  
+  .dark {
+    --background-color: #0F0A17;
+    --foreground-color: #211631;
+    --primary-text-color: #F0F0F0;
+    --secondary-text-color: #898989;
+    --toggle-bg: #3B304B;
+    --toggle-fg: #0F0A17;
+    transition: 0.3s;
+  }

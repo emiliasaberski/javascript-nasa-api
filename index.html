@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+    <link rel="manifest" href="./image/site.webmanifest">
+    <title>NASA API</title>
+</head>
+    <body>
+        <!-- Header som innehåller h1 och light mode toggle -->
+        <header class="header-container"> 
+            <h1>Mars Rover</h1>
+            <div id="toggle-container">
+                <div id="light-text">
+                </div>
+                <label for="toggle" class="toggle">
+                    <input type="checkbox"
+                    id="toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <!-- Main som innehåller två sections en för name input och en där korten visas -->
+        <main>
+            <section class="name-container">
+                <form id="nameForm"
+                      class="new-item-form">
+                    <h2>Choose your space name</h2>
+                        <label for="nameInput">
+                            Space Name (must be 3 characters) 
+                        </label>
+                        <div class="input-boxes">
+                            <input type="text" id="nameInput"
+                            class="text-box" placeholder="Pick your space name">
+                            <input type="submit"
+                            value="Show my name"
+                            class="submit-box"
+                            id="submitBtn">
+                        </div>
+                </form>
+                <div class="name-output">
+                    <h2>Welcome [<span id="output"></span>]!</h2>
+                </div>
+            </section>
+            <!-- Innehållet i photo-container genereras med Javascript eftersom det hämtas från APIn -->
+            <section id="photo-container">
+            </section>
+        </main>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

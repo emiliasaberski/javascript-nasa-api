@@ -1,0 +1,50 @@
+//Styling dokument för all typografi inkl import av google fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--primary-text-color);
+    line-height: 1em;
+    
+    @media (min-width: 768px){
+        font-size: 3em;
+    }
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1em;
+
+    @media (min-width: 768px){
+        font-size: 2.5em;
+    }
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+
+    @media (min-width: 768px){
+        font-size: 2em;
+    }
+}
+
+p, label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    
+    @media (min-width: 768px){
+        font-size: 1rem;
+    }
+}
+
