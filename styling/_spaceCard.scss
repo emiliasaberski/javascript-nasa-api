@@ -1,3 +1,6 @@
+.photo-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 #photo-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,4 +29,5 @@
             transition: 0.3s ease-in-out; //Så att färgerna fadeas när det togglas mellan light och dark mode
         }
     }
+}
 }
